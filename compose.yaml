@@ -1,0 +1,9 @@
+services:
+  rust:
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+      network: host
+    volumes:
+      - .:/workspace
+    tty: true
