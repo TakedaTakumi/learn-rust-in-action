@@ -23,6 +23,7 @@
       "settings": {
         "cSpell.words": [
           "usecase",
+          "devcontainer"
         ],
         "cSpell.ignorePaths": [
           "vscode-extension",
