@@ -1,0 +1,14 @@
+FROM rust:1.71-buster
+
+ENV VERSION 0.1.0
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+	git && \
+	rm -rf /var/lib/apt/lists/*
+
+# app
+RUN mkdir /workspace
+WORKDIR /workspace
+
+COPY . .
+
