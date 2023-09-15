@@ -23,6 +23,7 @@
       "settings": {
         "cSpell.words": [
           "usecase",
+          "devcontainer"
         ],
         "cSpell.ignorePaths": [
           "vscode-extension",
@@ -30,14 +31,17 @@
           ".vscode",
           ".vscode-insiders",
         ],
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2,
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4,
         "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rust-lang.rust-analyzer", // Makes the magic
         "markdown-preview-enhanced.breakOnSingleNewLine": false,
         "markdown-preview-enhanced.scrollSync": false,
         "files.autoSave": "afterDelay",
         "git-graph.commitDetailsView.location": "Docked to Bottom",
         "markdown.preview.scrollEditorWithPreview": false,
+        "rust-analyzer.server.path": "~/.local/bin/rust-analyzer-linux",
+        "rust-analyzer.trace.extension": true
       },
 
       // Add the IDs of extensions you want installed when the container is created.
@@ -53,7 +57,8 @@
         "eamodio.gitlens",
         "GitHub.copilot",
         "jock.svg",
-        "tamasfe.even-better-toml"
+        "tamasfe.even-better-toml",
+        "rust-lang.rust-analyzer"
       ]
       // cSpell: enable
     }
